@@ -1,7 +1,6 @@
 import express from "express"
 import cors from "cors"
 import { loginWithEmailPassword,createAccount ,logout,getCurrentSession,updatePassword,sendPasswordResetMail, updateVerification,executeCloudFunction} from "./controllers/auth_controllers.js"
-import { throwIfMissing } from './utils.js';
 
 const app = express()
 app.use(cors())
